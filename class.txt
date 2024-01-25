@@ -1,0 +1,28 @@
+1]
+#include <bits/stdc++.h>
+using namespace std;
+
+
+class student
+{
+    public:
+    string name;
+    int roll_number;
+    
+    student()
+    {
+    name="ABC";
+    roll_number=0;
+    }
+    
+    ~student();
+    
+};
+
+int main()
+{
+    return 0;
+}
+===================================================================
+
+2]
