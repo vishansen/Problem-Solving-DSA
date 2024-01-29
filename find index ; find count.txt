@@ -1,0 +1,71 @@
+[1] find elements & key ny liner search
+
+#include <bits/stdc++.h>
+using namespace std ;
+
+void find_Index(int arr[],int key)
+{
+int flag=0;
+int index=-1;
+int value =0;
+
+for(int i=0;i<5;i++)
+{
+    if(arr[i]==key)
+    {
+        flag=1;
+        index=i;
+        value=arr[i];
+          break;
+    }
+}
+ if(flag==1)
+ {
+     cout<<"index ="<<index<<endl<<"key ="<<value;
+ }
+ else{
+     cout<<"-1";
+ }
+}
+int main()
+{
+ int arr[5]={12,23,34,45,67};
+ int key=34;
+ find_Index(arr,key);
+}
+
+output : 2 & 34
+
+=====================================================
+[2] Count_Occurrence
+
+#include <bits/stdc++.h>
+using namespace std ;
+
+void Count_Occurrence(int arr[],int key)
+{
+int flag=0;
+int count=0;
+
+for(int i=0;i<8;i++)
+{
+    if(arr[i]==key)
+    {
+        flag=1;
+        count++;
+    }
+}
+ if(flag==1)
+ {
+     cout<<count;
+ }
+}
+int main()
+{
+ int arr[9]={1,1,1,2,3,4,5,5,6};
+ int key=1;
+ Count_Occurrence(arr,key);
+}
+
+ouput : 3
+
