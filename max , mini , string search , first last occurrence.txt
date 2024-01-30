@@ -1,0 +1,167 @@
+[1] Max element 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void Max_element(int arr [])
+{
+    int max=arr[0];
+    int index=0;
+    for(int i=0;i<5;i++)
+    {
+        if(arr[i]>max)
+        {
+         max=arr[i];
+         index=i;
+        }
+    }
+    cout<<max<<endl<<index;
+}
+
+int main()
+{
+    int arr[5]={12,13,45,46,78};
+    Max_element(arr);
+}
+
+
+======================================================
+output = 78
+
+[2] Min element 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void Min_element(int arr [])
+{
+    int min=arr[0];
+    int index=0;
+    for(int i=0;i<5;i++)
+    {
+        if(arr[i]<min)
+        {
+         min=arr[i];
+         index=i;
+        }
+    }
+    cout<<min<<endl<<index;
+}
+
+int main()
+{
+    int arr[5]={12,13,45,46,78};
+    Min_element(arr);
+}
+
+output = 12
+
+========================================
+
+[3] first_occcurrence index find
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void first_occcurrence(int arr [],int key)
+{
+    int flag=0;
+    int index=0;
+    
+    for(int i=0;i<7;i++)
+    {
+        if(arr[i]==key)
+        {
+            flag=1;
+            index=i;
+            break;
+        }
+    }
+    if(flag==1)
+    {
+        cout<<index;
+    }
+}
+
+int main()
+{
+    int arr[7]={1,2,3,3,4,4,5};
+    int key = 3;
+    first_occcurrence(arr,key);
+}
+
+output = 2;
+==============================================================
+[4] last_occcurrence index findout
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void last_occcurrence(int arr [],int key)
+{
+    int flag=0;
+    int index=0;
+    
+    for(int i=0;i<7;i++)
+    {
+        if(arr[i]==key)
+        {
+            flag=1;
+            index=i;
+        }
+    }
+    if(flag==1)
+    {
+        cout<<index;
+    }
+}
+
+int main()
+{
+    int arr[7]={1,2,3,3,4,4,5};
+    int key = 3;
+    last_occcurrence(arr,key);
+}
+
+output = 3
+===================================================
+[5] string findout
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void name_search(string str[] , string key , int length)
+{
+    int flag=0;
+    int index =-1;
+    
+    for(int i=0; i<length; i++)
+    {
+        if(str[i]==key)
+        {
+            flag=1;
+            index=i;
+            break;
+        }
+    }
+    if(flag==1)
+    {
+        cout<<index;
+    }
+    else
+    {
+        cout<<"-1";
+    }
+}
+
+int main()
+{
+  string str[] = {"vishu","vishan","shruti","niki"};
+  int length=(sizeof(str)/sizeof(str[0]));
+  string key = "niki";
+  name_search(str , key , length);
+
+    return 0;
+}
+
+
